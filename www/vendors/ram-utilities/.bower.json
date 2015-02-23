@@ -1,0 +1,24 @@
+{
+  "name": "ram-utilities",
+  "dependencies": {
+    "angular": "1.3.9",
+    "angular-ui-router": "0.2.13",
+    "angular-mocks": "1.3.9",
+    "jquery": "1.9.1",
+    "lodash": "2.4.1"
+  },
+  "analytics": false,
+  "resolutions": {
+    "angular": ">= 1.0.8"
+  },
+  "homepage": "https://github.com/cognitronic/ram-utilities",
+  "_release": "c20b361e41",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c20b361e417590c0cb09f48d37c399d4d3085341"
+  },
+  "_source": "git://github.com/cognitronic/ram-utilities.git",
+  "_target": "*",
+  "_originalSource": "ram-utilities"
+}

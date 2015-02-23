@@ -1,0 +1,22 @@
+{
+  "name": "totvs",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.3.9",
+    "angular-ui-router": "0.2.13",
+    "angular-sanitize": "1.3.8",
+    "angular-bootstrap": "0.12.0",
+    "angular-mocks": "1.3.9",
+    "jquery": "1.11.2",
+    "lodash": "2.4.1",
+    "ram-utilities": "latest",
+    "jasmine-jquery": "1.7.0",
+    "angular-file-upload": "~1.1.5",
+    "textAngular": "~1.3.3",
+    "angularjs-toaster": "~0.4.10"
+  },
+  "analytics": false,
+  "resolutions": {
+    "angular": "1.3.9"
+  }
+}

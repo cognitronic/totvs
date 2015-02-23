@@ -1,0 +1,59 @@
+
+<section id="menu">
+	<div class="container no-padding">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="col-lg-12 add-status-container">
+					<div class="col-lg-12 ">
+						<div >
+							<textarea ng-model="fc.newPost.messageBody" placeholder="Share what's new..."></textarea>
+							<div class="pull-right">
+								<button class="btn btn-success" ng-click="fc.sharePost(fc.newPost)">
+									<i class="glyphicon glyphicon-share-alt"></i> Share
+								</button>
+								<button class="btn btn-default" ng-click="fc.clearPost()">
+									<i class="glyphicon glyphicon-remove"></i> Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12" ng-repeat="post in fc.feed | orderBy: 'dateShared':true">
+				<div class="col-lg-12 item-container">
+					<div class="col-lg-12 img-container">
+						<h3>
+							<img class="img-thumbnail profile-img-sm" ng-src="{{post.thumbnail}}" /> {{post.name}}
+						</h3>
+						<small>
+							<b>posted on:</b> <span class="note">{{post.dateShared}}</span>
+							<span class="pull-right">
+								<b>from: </b><span class="note">{{post.location}}</span>
+							</span>
+						</small>
+					</div>
+					<div class="col-lg-12 item-description" fix-container>
+						<div>
+							<img class="main-img" ng-src="{{post.imagePath}}" alt="post image"/>
+						</div>
+						<div class="post-body" fix-container>
+							{{post.messageBody}}
+						</div>
+					</div>
+					<div class="col-lg-12 item-actions">
+						<button class="btn btn-primary">
+							<i class="glyphicon glyphicon-thumbs-up"></i>
+							Like
+						</button>
+						<button class="btn btn-default">
+							<i class="glyphicon glyphicon-share-alt"></i>
+							Share
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
